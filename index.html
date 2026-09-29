@@ -1,55 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Minha primeira pagina com Bootstrap</title>
-</head>
-<body>
-    <h1>Primeira página com HTML com Bootstrap</h1>
-    <p>O <b>Bootstrap</b> é um framework de desenvolvimento front-end que facilita a criação de páginas e sistemas web com HTML CSS e JavaScript</p>
-    <p>Em termos simples, <b>ele fornece componentes e estilos prontos para você não precisar criar tudo do zero</b></p>
-    <h1>Dowload</h1>
-    <p>
-        Dowload Bootstrap to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers like npm, RubyGems, and more.
-    </p>
-    <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        O que é contabilidade? #1
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-       É a área responsável por registrar, organizar e analisar as movimentações financeiras de uma empresa.
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Qual é a importância da contabilidade para uma empresa? #2
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-       Ela ajuda a controlar as finanças, acompanhar resultados e apoiar a tomada de decisões.
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Quais são os principais documentos contábeis?#3
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-       Alguns exemplos são notas fiscais, recibos, extratos bancários, balanços patrimoniais e demonstrações de resultados.
-      </div>
-    </div>
-  </div>
-</div>
-       <script src="/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+<html lang="pt-br"></html>
+<html>
+    <head>
+        <title>Mtec Informática para Internet</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link href="css/bootstrap.css" rel="stylesheet">
+         <style>
+          .header-foto{
+            background-image: url("img/Logo\ lobo\ Mtec.png");
+            background-size: cover, cover;
+            background-position: center, center;
+            background-repeat: no-repeat, no-repeat;
+        
+          }
+         </style>
+    </head>
+      <body  data-bs-theme=dark style="padding-top: 90px;">
+      <nav class="navbar navbar-expand-lg bg-dark fixed-top text-uppercase">
+        <div class="container">
+          <a class="navbar-brand active" href="#">
+            <img src="img/Logo lobo Mtec.png" alt="Lobo Símbolo da Informática " height="70" class="rounded-circle"/>
+          </a>
+            <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Abrir Menu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="1°.html" aria-current="page">1°. Série</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="2°.html">2°. Série</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="3°.html">3°. Série</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primary">Matricula-se</a>
+            </div>
+        </div>
+      </nav>
+     <!--<header class="text-white py-5" style="background: #3F5EFB;
+background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(242, 230, 230, 1) 100%);">-->
+        <div class="container py-5 header-foto">
+        <div class="row align-items-center g-5"></div>
+        <div class="col-lg-7">
+          <p class="text-uppercase small  fw-semibold mb-2 opacity-75">Etec Prof. Milton Gazzetti - Presidente Venceslau</p>
+          <h1 classs="display-4 fw-bold">Informática para Internet</h1>
+          <p class="lead mb-0">
+            Curso Técnico gratuito, integrado ao Ensino Médio. Em três anos você sai criando siter, aplicativos e
+            sistemas - do primeiro HTML ao sistema no ar.
+          </p>
+        </div>
+        <div class="col-lg-5 text-center d-none d-lg-block">
+        <img
+        src="images/Logo Mtec Lobo.jpeg"
+        alt="Lobo símbolo da informática para Internet"
+        class="img-fluid"
+        style="max-height: 260px; border-radius: 50%;"
+        />
+        </div>
+        </div>
+      </header>
+          <h1 class="text-primary">Mtec Informática para Internet</h1>
+          <p>Página Principal do Website</p>
+         <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
